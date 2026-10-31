@@ -145,11 +145,16 @@ export default function InipuHero() {
   useEffect(() => {
     if (reduce) { p.set(0.85); intro.set(1); return; }
     p.set(scrollYProgress.get());
+<<<<<<< HEAD
     let c: ReturnType<typeof animate> | undefined;
     const go = () => { c = animate(intro, 1, { duration: 2.4, ease: "easeOut" }); };
     if (document.documentElement.dataset.loaded === "1") go();
     else window.addEventListener("inipu:ready", go, { once: true });
     return () => { c?.stop(); window.removeEventListener("inipu:ready", go); };
+=======
+    const c = animate(intro, 1, { duration: 2.4, ease: "easeOut" });
+    return () => c.stop();
+>>>>>>> 9d84e7331aa6c9ca4384899e9a69fdeb304be549
   }, [reduce, p, intro, scrollYProgress]);
 
   useEffect(() => {

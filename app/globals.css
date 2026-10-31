@@ -20,6 +20,7 @@ section[id] { scroll-margin-top: 72px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+<<<<<<< HEAD
 
 /* Drift wall + loader */
 .drift-plane { --tw: max(110px, 11vw, 12vh); }
@@ -45,3 +46,5 @@ section[id] { scroll-margin-top: 72px; }
 /* if JavaScript fails to load, the loader hides itself after 8s so the page is never blocked */
 .loader-failsafe { animation: failsafe .01s 8s forwards; }
 @keyframes failsafe { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+=======
+>>>>>>> 9d84e7331aa6c9ca4384899e9a69fdeb304be549
